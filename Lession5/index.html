@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document | Lession 5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <div class="container-grid">
+        <div class="heading">
+            <span>
+                <i class="fas fa-history">
+                    <div id="history"></div>
+                </i>
+            </span>
+            <span>
+                <i class="fa-solid fa-calculator"></i>
+                <i class="fa-solid fa-calculator"></i>
+                <i class="fa-solid fa-calculator"></i>
+            </span>
+            <span>
+                <label>
+                    <input type="checkbox" name="theme">
+                    <span class="btn"></span>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </span>
+        </div>
+        <div id="result"></div>
+        <div class="calculate">
+            <div class="number">
+                <button class="btn" value="7">7</button>
+                <button class="btn" value="8">8</button>
+                <button class="btn" value="9">9</button>
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+                <button class="btn" value="6">6</button>
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn" value="0">0</button>
+                <button class="btn" value=".">.</button>
+            </div>
+
+            <div class="operation">
+                <button class="btn" onclick="undo()">DEL</button>
+                <button class="btn" onclick="clean()">AC</button>
+                <button class="btn" value="*">x</button>
+                <button class="btn" value="/">/</button>
+                <button class="btn" value="+">+</button>
+                <button class="btn" value="-">-</button>
+                <button class="btn" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

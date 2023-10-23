@@ -1,0 +1,113 @@
+@media (min-width:1366px) {
+    
+}
+
+@media (min-width:1200px) and (max-width:1199px) {
+    
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .wrapper #about-me .about-content h1 {
+        font-size: 4rem;
+    }
+    nav{
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .wrapper .nav-mobile{
+        width: 100%;
+        margin-bottom: 3rem;
+        height: 10%;
+        display: flex;
+        background: #f1df11;
+        position: relative;
+    }
+    .nav-mobile .img-nav img {
+        width: 15%;
+        margin-left: 2.5rem;
+    }
+}
+
+/* tablet */
+@media (min-width:480px) and (max-width:768px) {
+    .wrapper #about-me .about-content h1 {
+        font-size: 4rem;
+    }
+    nav{
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .wrapper .nav-mobile{
+        width: 100%;
+        margin-bottom: 3rem;
+        height: 10%;
+        display: flex;
+        background: #f1df11;
+        position: relative;
+    }
+    .nav-mobile .img-nav img {
+        width: 15%;
+        margin-left: 2.5rem;
+    }
+}
+
+/* mobile */
+@media (min-width:240px) and (max-width:480px) {
+    nav{
+        display: none;
+    }
+
+    .wrapper #about-me, #skills-me, #project-interest{
+        padding: 1rem;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    /* mobile */
+    .wrapper .nav-mobile{
+        width: 100%;
+        margin-bottom: 3rem;
+        height: 10%;
+        display: flex;
+        background: #f1df11;
+        position: relative;
+    }
+
+    .nav-mobile .img-nav img {
+        width: 20%;
+        margin-left: 0;
+        padding: 5px 5px 0 5px;
+    }
+
+    .wrapper #about-me  .about-content h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .project-interest h2{
+        font-size: 2rem;
+    }
+
+    #skills-me .skill-icon ul .icon-content-skill li{
+        margin-right: 1rem;
+        font-size: 2.2rem;
+    }
+
+    #skills-me h2{
+        font-size: 2.5rem;
+    }
+
+    .wrapper #about-me .about-content .about-content-p-from {
+        font-size: 1rem;
+    }
+}

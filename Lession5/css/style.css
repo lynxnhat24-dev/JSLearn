@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    background-image: linear-gradient(to bottom right,rgb(12, 146, 236) 0%,red 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html{
+    --bg:white;
+    --color-text:black;
+    --color-border: rgb(202, 202, 202);
+    --btn-active:white;
+}
+
+/* Main */
+#result {
+    padding: .5rem 1rem 0rem;
+    text-align: right;
+    height: 50px;
+    font-size: 1.8rem;
+    color: var(--color-text);
+    background: var(--bg);
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.container-grid{
+    padding: 5rem 0;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows:.5fr 1fr 5fr;
+}
+
+.calculate{
+    border-top:1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+.number{
+    background: var(--bg);
+    border-right: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.operation{
+    background: var(--bg);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.btn{
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    background: var(--bg);
+    outline: none;
+    cursor: pointer;
+}
+
+.operation .btn{
+    color: rgb(34, 150, 245);
+}
+
+.btn:active{
+    border-radius: 50%;
+    background: var(--btn-active);
+    cursor: pointer;
+}
+
+/* Customer scollbar */
+#result::-webkit-scrollbar{
+    height: 3px;
+    width: 3px;
+    background: white;
+}
+
+#result::-webkit-scrollbar-thumb:horizontal{
+    background: black;
+    border-radius: 10px;
+}
+
+#result::-webkit-scrollbar-track{
+    border-radius: 0;
+    background: white;
+}
+/* Heading */
+html[data-theme='dark']{
+    --bg: rgb(2, 2, 2);
+    --color-text:white;
+    --color-border:rgb(97, 97, 97); 
+    --btn-active:rgb(43, 43, 43);
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .8rem .4rem;
+}
+
+.heading span {
+    color: var(--color-text);
+    font-size: 1.3rem;
+}
+
+.fas{
+    cursor: pointer;
+}
+
+label input[type="checkbox"]{
+    -webkit-appearance: none;
+}
+
+/* History */
+#history{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background: rgb(3, 89, 116);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+.indexHistory {
+    display: block !important;
+}

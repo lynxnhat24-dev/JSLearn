@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document | Lession 21 | Slider Image Responsive</title>
+    <!-- Style Sheet CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/1.jpg" id="content1" class="active">
+            <img src="img/2.jpg" id="content2">
+            <img src="img/3.jpg" id="content3">
+            <img src="img/4.jpg" id="content4">
+            <img src="img/5.jpg" id="content5">
+        </div>
+        <div class="dot-container">
+            <button onclick="dot(1)"></button>
+            <button onclick="dot(2)"></button>
+            <button onclick="dot(3)"></button>
+            <button onclick="dot(4)"></button>
+            <button onclick="dot(5)"></button>
+        </div>
+        <button id="prev" onclick="prev()">&lt;</button>
+        <button id="next" onclick="next()">&gt;</button>
+    </div>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document | Lesson 35 | Card Credit Custom</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="credit-card" id="card">
+        <div class="card-front">
+          <div class="branding">
+            <img src="img/chip.png" class="chip-img" />
+            <img src="img/visa.png" class="visa-logo" />
+          </div>
+          <div class="card-number">
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+          </div>
+          <div class="details">
+            <div>
+              <span>Card Holder</span>
+              <span id="card-holder-name">Your Name Here</span>
+            </div>
+            <div>
+              <span>Expires</span>
+              <span id="validity">06/28</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <div class="black-strip"></div>
+          <div class="white-strip">
+            <span>CVV</span>
+            <div id="cvv-display"></div>
+          </div>
+          <img src="img/visa.png" class="visa-logo" />
+        </div>
+      </div>
+      <form>
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" placeholder="1234123412341234" />
+        
+        <label for="card-holder">Card Holder</label>
+        <input type="text" id="card-name-input" placeholder="Your Name">
+
+        <div class="date-cvv">
+            <div>
+                <label for="validity">
+                    Expires On:
+                </label>
+                <input type="date" id="validity-input">
+            </div>
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="number" placeholder="***" id="cvv">
+            </div>
+        </div>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
